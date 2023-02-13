@@ -153,20 +153,14 @@ does not take the canonical path to the cmake root.
 
 This can be done generally via "sudo apt install <package name>"
 
-- build-essential
-- clang
-- python3
-- cmake
-- libboost-all-dev
-- libyaml-cpp-dev
-- rapidjson-dev
-- libsqlite3-dev
-- zlib1g-dev
-- libhdf5-cpp-103
-- libhdf5-dev
-- cppcheck
-- pygments (for cppcheck-htmlreport)
-- doxygen graphviz (if you want generate the documentation and dot graphs)
+```
+build-essential clang python3 cmake libboost-all-dev \
+libyaml-cpp-dev rapidjson-dev libsqlite3-dev zlib1g-dev \
+libhdf5-cpp-103 libhdf5-dev cppcheck
+```
+Optionally also install:
+- `doxygen graphviz` (if you want generate the documentation and dot graphs)
+- pygments Python package (for cppcheck-htmlreport) `pip3 install -U pygments`
 
 ## Notes on Building
 
