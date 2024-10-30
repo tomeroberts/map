@@ -47,7 +47,7 @@ python_impl:
     - cpython
 
 boost:
-    - 1.78
+    - 1.85
 
 # The remainder of the file is an example of how you can
 # specify multiple versions of compilers for each platform

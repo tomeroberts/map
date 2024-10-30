@@ -1,5 +1,5 @@
 boost:
-- '1.78'
+- '1.85'
 c_compiler:
 - gcc
 c_compiler_version:
