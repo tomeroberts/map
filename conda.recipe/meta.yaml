@@ -39,6 +39,7 @@ requirements:
     - clang       {{ linux_clang_version }}  # [linux]
     - clangxx     {{ linux_clang_version }}  # [linux]
     - llvm-tools  {{ linux_clang_version }}  # [linux]
+    - lld         {{ linux_clang_version }}  # [linux]
     - cppcheck
     # add runtime requirements for argos to make it easier to script
     # creation of a 'dev' environment that can also run Argos
