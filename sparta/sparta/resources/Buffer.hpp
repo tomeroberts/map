@@ -929,7 +929,7 @@ namespace sparta
             if(SPARTA_EXPECT_FALSE(is_infinite_mode_)) {
                 resizeInternalContainers_();
             }
-            sparta_assert(numFree(), "Buffer exhausted");
+            sparta_assert(numFree(), "Buffer '" << getName() << "' exhausted");
             sparta_assert(free_position_ != nullptr);
             free_position_->allocate(std::forward<U>(dat));
             free_position_->physical_idx = num_valid_;
