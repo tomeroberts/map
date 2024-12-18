@@ -702,7 +702,7 @@ namespace sparta
                    const bool suppress_events=true)
         {
             sparta_assert(pipe_.isValid(stall_stage_id), "Try to stall an empty pipeline stage!");
-            sparta_assert(!isStalledOrStalling(), "Try to stall a pipeline that is stalling or already stalled!");
+            sparta_assert(!isStalledOrStallingAtStage(stall_stage_id), "Trying to stall a pipeline stage that is stalling or already stalled!");
 
             if (stall_cycles == 0) {
                 return;
